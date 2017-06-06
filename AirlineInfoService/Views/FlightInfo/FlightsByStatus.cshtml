@@ -1,0 +1,18 @@
+﻿@model AirlineModels.FlightInfo
+ 
+
+<p><b>Find Flights By Status:</b></p>
+    <p1>
+        @using (Html.BeginForm("GetFlightByStatus", "FlightInfo", FormMethod.Post))
+        {
+            <div>
+                @Html.EnumDropDownListFor( m => m.Flightstatus, new { @id = "ddlMessageType", @class = "form-control", @style = "width:200px;" })
+            </div>
+            <input id="Submit1" type="submit" value="Submit" />
+
+
+        }
+
+    </p1>
+    
+

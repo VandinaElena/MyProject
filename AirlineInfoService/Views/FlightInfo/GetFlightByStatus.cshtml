@@ -1,0 +1,57 @@
+﻿@model IEnumerable<AirlineModels.FlightInfo>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Datetime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FlightNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PortOfArrival)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Terminal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Flightstatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Datetime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FlightNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PortOfArrival)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Terminal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Flightstatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

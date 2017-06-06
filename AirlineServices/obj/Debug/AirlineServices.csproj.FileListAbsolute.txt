@@ -1,0 +1,16 @@
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\AirlineServices.dll.config
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\AirlineServices.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\AirlineServices.pdb
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\AirlineContracts.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\AirlineDAL.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\AirlineModels.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\EntityFramework.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\AirlineContracts.pdb
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\AirlineDAL.pdb
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\AirlineModels.pdb
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\EntityFramework.xml
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\obj\Debug\AirlineServices.csprojResolveAssemblyReference.cache
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\obj\Debug\AirlineServices.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineServices\obj\Debug\AirlineServices.pdb

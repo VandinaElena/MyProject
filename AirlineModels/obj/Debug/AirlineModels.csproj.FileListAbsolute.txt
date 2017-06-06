@@ -1,0 +1,10 @@
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineModels\bin\Debug\AirlineModels.dll.config
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineModels\bin\Debug\AirlineModels.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineModels\bin\Debug\AirlineModels.pdb
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineModels\bin\Debug\EntityFramework.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineModels\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineModels\bin\Debug\EntityFramework.xml
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineModels\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineModels\obj\Debug\AirlineModels.dll
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineModels\obj\Debug\AirlineModels.pdb
+C:\Users\aleksandra\documents\visual studio 2015\Projects\AirlineInfoService\AirlineModels\obj\Debug\AirlineModels.csprojResolveAssemblyReference.cache

@@ -1,0 +1,66 @@
+﻿@model AirlineModels.Entities.DeparturesInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DeparturesInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Datetime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Datetime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlightNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlightNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Destination)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destination)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Terminal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Terminal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Flightstatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flightstatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

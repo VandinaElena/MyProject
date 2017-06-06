@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Airport Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    
+    
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Airport application", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div> 
+              
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li >@Html.ActionLink("Arrivals Info", "Index", "FlightInfo", new { area = "" }, new { @class = "navbar-brand" });</li>
+                    <li>@Html.ActionLink("Departures Info", "Index", "DeparturesInfoes", new { area = "" }, new { @class = "navbar-brand" });</li>
+                    <li>@Html.ActionLink("Passengers list", "Index", "Passengers", new { area = "" }, new { @class = "navbar-brand" });</li>
+                    <li>@Html.ActionLink("Flight Pricelist", "Index", "FlightPrices", new { area = "" }, new { @class = "navbar-brand" });</li>
+                   </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        @if (!HttpContext.Current.User.Identity.IsAuthenticated)
+                        {
+                            <li > <span style="display: inline-block; color: #999" class="glyphicon glyphicon-user"></span> @Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", style = "display: inline-block;" });</li>
+                            <li > <span style="display: inline-block; color: #999" class="glyphicon glyphicon-log-in"></span>@Html.ActionLink("Log In", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", style = "display: inline-block;" });</li>
+                        }
+
+                        @if (HttpContext.Current.User.Identity.IsAuthenticated)
+                        {
+                            
+                            @*<li class="active" style="display: inline-block; color: #999" >@HttpContext.Current.User.Identity.Name</li>*@
+
+                            <li style="color:#999">Hello, @HttpContext.Current.User.Identity.Name &nbsp<span style="display: inline-block; text-indent: 5px; color: #999" class="glyphicon glyphicon-log-out"></span>@Html.ActionLink("Log Out", "Logout", "Account", routeValues: null, htmlAttributes: new { id = "logoutForm", style = "display: inline-block;" })</li>
+                            @*<li><a href="javascript:document.getElementById('logoutForm').submit()"></a></li>*@
+                        
+                                }
+                    </ul>
+</div>
+            </div>
+
+    </div>
+     
+    <div class="container body-content" >
+        @RenderBody()
+        @RenderSection("Scripts", required: false)
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My AirlineInfoService Application</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

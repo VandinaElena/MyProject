@@ -1,0 +1,47 @@
+﻿@model IEnumerable<AirlineModels.FlightPrice>
+
+@{
+    ViewBag.Title = "Index";
+}
+<input id="btnAjax" name="btnAjax" type="button" value="View Arrivals Pricelist" />
+<input id="btnAjax1" name="btnAjax1" type="button" value="View Departures Pricelist" />
+
+<div id="PricesDiv"></div>
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+@section Scripts {
+    <script>
+        $('#btnAjax').click(function () {
+                $.ajax({
+                    url: '/FlightPrices/GetArrivalsPrices',
+                    contentType: 'application/html; charset=utf-8',
+                    type: 'GET',
+                    dataType: 'html'
+                })
+                .success(function (result) {
+                    $('#PricesDiv').html(result);
+                   
+                })
+                .error(function (xhr, status) {
+                    alert(status);
+                })
+        });
+        $('#btnAjax1').click(function () {
+            $.ajax({
+                url: '/FlightPrices/GetDeparturesPrices',
+                contentType: 'application/html; charset=utf-8',
+                type: 'GET',
+                dataType: 'html'
+            })
+            .success(function (result) {
+                $('#PricesDiv').html('');
+                $('#PricesDiv').html(result);
+
+            })
+            .error(function (xhr, status) {
+                alert(status);
+            })
+        });
+    </script>
+}
